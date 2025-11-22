@@ -1,0 +1,196 @@
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-section {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.about-section p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.offer-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--bg-color);
+  border-radius: 0.75rem;
+  transition: transform 0.3s;
+}
+
+.offer-item:hover {
+  transform: translateY(-5px);
+}
+
+.offer-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-item h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.offer-item p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.capabilities-list {
+  list-style: none;
+  padding: 0;
+}
+
+.capabilities-list li {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: var(--bg-color);
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--primary-color);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.capabilities-list li strong {
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tech-item {
+  padding: 1.5rem;
+  background-color: var(--primary-color);
+  border-radius: 0.75rem;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.tech-item:hover {
+  background-color: var(--primary-hover);
+}
+
+.tech-item:hover {
+  transform: scale(1.05);
+}
+
+.tech-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.tech-desc {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.about-cta {
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--primary-light);
+  border-radius: 1rem;
+  border: 2px solid var(--primary-color);
+}
+
+.about-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  border: none;
+  padding: 0;
+}
+
+.about-cta p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+}
+
+.about-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-section {
+    padding: 1.5rem;
+  }
+
+  .offer-grid,
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

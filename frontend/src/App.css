@@ -1,0 +1,27 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+  background-color: var(--bg-color);
+}
+
+@media (max-width: 768px) {
+  .entity-container,
+  .search-container,
+  .dashboard-container {
+    padding: 1rem;
+  }
+
+  .entity-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
